@@ -1,0 +1,19 @@
+======================================= test session starts ========================================
+platform linux -- Python 3.11.11, pytest-8.3.5, pluggy-1.5.0
+rootdir: /content
+plugins: cov-6.0.0, langsmith-0.3.18, anyio-4.9.0, typeguard-4.4.2
+collected 9 items
+
+test_score.py .........                                                                      [100%]
+
+---------- coverage: platform linux, python 3.11.11-final-0 ----------
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+app.py             20     11    45%   21-41
+score.py           11      3    73%   15, 17, 19
+test_score.py      77      1    99%   128
+---------------------------------------------
+TOTAL             108     15    86%
+
+
+======================================== 9 passed in 11.95s ========================================
