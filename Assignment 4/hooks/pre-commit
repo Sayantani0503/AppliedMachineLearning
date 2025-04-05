@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Running tests before commit..."
+python test.py  # Runs your test script
+if [ $? -ne 0 ]; then
+    echo "Tests failed! Commit aborted."
+    exit 1  # Stop the commit if tests fail
+fi
+
+echo "Tests passed. Proceeding with commit."
